@@ -1,0 +1,20 @@
+import java.text.DecimalFormat;
+
+public class Main {
+    public static void main(String[] args) {
+        // Define the pattern to restrict to 2 decimal places
+        DecimalFormat df = new DecimalFormat("#.##");
+
+        // Example float and double values
+        float floatValue = 123.45678f;
+        double doubleValue = 123.456789;
+
+        // Format float value
+        String formattedFloatValue = df.format(floatValue);
+        System.out.println("Formatted float value: " + formattedFloatValue); // Output: 123.46
+
+        // Format double value
+        String formattedDoubleValue = df.format(doubleValue);
+        System.out.println("Formatted double value: " + formattedDoubleValue); // Output: 123.46
+    }
+}
